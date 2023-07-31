@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<title> | BT Vision </title>
+
+{% endblock head %}
+
+{% block hero %}
+
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">Brain Tumor Detection and Classification</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400">
+          BT vision offers a robust solution that enables effortless detection and classification of Brain Tumors conveniently accessible to users.
+        </h2>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center text-lg-start">
+            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <span>Get Started</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="{{ url_for('static',filename='custom/hero-main.png') }}" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock hero %}
+
+{% block main %}
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <h3>Our Identity</h3>
+            <h2>Our primary objective is to expedite diagnostic outcomes, ensuring swift treatment for those in need.</h2>
+            <p>
+              This application allows individuals to effortlessly scan images for tumor detection without the need for medical assistance, resulting in a faster and more accessible process.
+            </p>
+            <div class="text-center text-lg-start">
+              <a href="upload" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Upload Brain Scan</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{{ url_for('static',filename='custom/about.png') }}" class="img-fluid" alt="">
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Values Section ======= -->
+  <section id="values" class="values">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Our Values</h2>
+        <p>What does our website offer?</p>
+      </header>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="box" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ url_for('static',filename='img/values-1.png') }}" class="img-fluid" alt="">
+            <h3>Easy access from anywhere</h3>
+            <p>This easy to use webapp can be accessed from any smart phone with internet connection.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="fade-up" data-aos-delay="400">
+            <img src="{{ url_for('static',filename='img/values-2.png') }}" class="img-fluid" alt="">
+            <h3>Fast and accurate results</h3>
+            <p>It takes only a minute or two to get the correct results. Thus users dont need to get a doctor's appointment separately anymore. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <img src="{{ url_for('static',filename='img/values-3.png') }}" class="img-fluid" alt="">
+            <h3>Generate medical report</h3>
+            <p>Our website also provides the option to save the report in their profile, to download the report on their device and to share it directly via email.</p>
+ 
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Values Section -->
+
+ 
+
+  <!-- ======= Features Section ======= -->
+  <section id="features" class="features">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Features</h2>
+        <p>What sets our website apart from others?</p>
+      </header>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <img src="{{ url_for('static',filename='img/features.png') }}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+          <div class="row align-self-center gy-4">
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Faster report analysis</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Easy to use</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Supports multiple image formats</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Saves the generated report</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Easy to share</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Accurate results</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!-- / row -->
+
+    </div>
+
+  </section><!-- End Features Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Additional Information</h2>
+        <p></p>
+      </header>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-box blue">
+            <i class="ri-discuss-line icon"></i>
+            <h3>User Instructions</h3>
+            <p> Create an account on our website and simply upload your scans to get results. Provides easy option to share the results directly</p>
+            <a href="instruct" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+    </div>
+
+  </section><!-- End Services Section -->
+
+ 
+
+{% endblock main %}

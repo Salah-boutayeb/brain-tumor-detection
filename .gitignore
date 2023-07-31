@@ -1,0 +1,13 @@
+/Misc
+.vscode
+src/__pycache__
+.idea
+src/CNN/models
+.ipynb_checkpoints
+src/ImageProc/img.jpg
+dataset
+new_dataset
+database.db
+__pycache__
+
+venv
