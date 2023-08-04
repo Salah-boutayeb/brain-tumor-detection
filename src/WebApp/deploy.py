@@ -63,7 +63,7 @@ def segm(file_path, filename, nom, prenom, phone, email):
                 if model.names[int(c)] == 'brain_tumor':
                     # st.error("Brain Tumor detection, seek immediate health care", icon="🚨")
                     patient = Patient(nom=nom, prenom=prenom, email=email, telephone=phone, etat="Brain Tumor detection, seek immediate health care.",
-                                      barin_image_url=url_for('static/save/'+'plotted_image_'+filename))
+                                      barin_image_url='save/'+'plotted_image_'+filename)
                     db.session.add(patient)
                     db.session.commit()
                     return render_template('pred.html', pred="Brain Tumor detection, seek immediate health care 🚨", f_name='save/plotted_image_'+filename, patient=patient)

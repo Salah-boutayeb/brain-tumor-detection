@@ -102,7 +102,7 @@
         <a href="#info"><i class="material-icons">keyboard_arrow_up</i></a>
       </p>
       <p class="uploadhead">Brain Tumor Detection</p>
-      <p class="uploadtext">Upload your scan image for processing</p>
+
       <div class="form">
         <form
           name="bt_classifier"
@@ -111,36 +111,49 @@
           action="/upload"
           method="POST"
         >
-          <div class="">
-            <label for="nom"> Nom: </label>
+         
 
-            <input class="" type="text" name="nom" id="" />
-          </div>
-          <div class="">
-            <label for="prenom">Prenom: </label>
+       
+            <div class="form">
+              
+            <div class="patient-info">
+              <div class="title-patient">Patient Information</div>
+                <label for="cin">CIN:</label>
+                <input class="" type="text" name="cin" id="cin" />
+                <label for="nom">Nom:</label>
+                <input class="" type="text" name="nom" id="nom" />
+                <label for="prenom">Prénom:</label>
+                <input class="browse" type="text" name="prenom" id="prenom" />
+                <label for="age">Âge:</label>
+                <input class="browse" type="text" name="age" id="age" />
 
-            <input class="browse" type="text" name="prenom" id="" />
-          </div>
-          <div class="">
-            <label for="telephone">Telephone:</label>
-
-            <input class="browse" type="text" name="telephone" id="" />
-          </div>
-          <div class="">
-            <label for="email">Email: </label>
-
-            <input class="browse" type="text" name="email" id="" />
-          </div>
-
-          <input class="browse" type="file" name="bt_image" id="bt_image" />
-
-          <!--				<input class="submit" type="submit">  	  -->
-          <button type="submit" name="submit" id="sub">Classify</button>
+                <label for="adresse">Adresse:</label>
+                <input class="" type="text" name="adresse" id="adresse" />
+                <label for="telephone">Téléphone:</label>
+                <input class="browse" type="text" name="telephone" id="telephone" />
+                <label for="email">Email:</label>
+                <input class="browse" type="text" name="email" id="email" />
+              
+            </div>
+              <div class="image-upload">
+                <div class="title-image">Upload Scan Image</div>
+                <p class="uploadtext">Choose File:</p>
+                <input class="browse" type="file" name="bt_image" id="bt_image" />
+                <button type="submit" name="submit" id="sub">Classify</button>
+              </div>
+            </div>
+    
+      
         </form>
-      </div>
+        
+        
 
+
+           
+        
+           
       <p class="uploadtop">
-        <a href="#front"><i class="material-icons">arrow_upward</i></a>
+      
       </p>
     </div>
   </body>
